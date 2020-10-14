@@ -255,7 +255,7 @@ body {
 	font-weight: 300;
 }
 .base-banner {
-	background: url('/assets/images/home-bg.jpg') no-repeat 50%;
+	background: url('/demos/cixtelecom/assets/images/home-bg.jpg') no-repeat 50%;
 	background-size: cover;
 	color: #fff;
 }
