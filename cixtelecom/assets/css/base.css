@@ -128,16 +128,16 @@ body {
 	background-attachment: fixed;
 }
 .banner-1 {
-	background: url("/assets/images/cover-4.jpg") no-repeat 50% / cover;
+	background: url("/demos/cixtelecom/assets/images/cover-4.jpg") no-repeat 50% / cover;
 }
 .my-slider .hero-image.cover-1 {
-	background: url("/assets/images/cover-1.jpg") no-repeat 50% fixed / cover;
+	background: url("/demos/cixtelecom/assets/images/cover-1.jpg") no-repeat 50% fixed / cover;
 }
 .my-slider .hero-image.cover-2 {
-	background-image: url("/assets/images/cover-2.jpg");
+	background-image: url("/demos/cixtelecom/assets/images/cover-2.jpg");
 }
 .my-slider .hero-image.cover-3 {
-	background-image: url("/assets/images/cover-3.jpg");
+	background-image: url("/demos/cixtelecom/assets/images/cover-3.jpg");
 }
 .my-slider .hero-subtitle {
 	display: block;
