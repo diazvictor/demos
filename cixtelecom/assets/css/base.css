@@ -128,7 +128,7 @@ body {
 	background-attachment: fixed;
 }
 .banner-1 {
-	background: url("/demos/cixtelecom/assets/images/cover-4.jpg") no-repeat 50% / cover;
+	background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0.3)), url("/assets/images/cover-4.jpg");
 }
 .my-slider .hero-image.cover-1 {
 	background: url("/demos/cixtelecom/assets/images/cover-1.jpg") no-repeat 50% fixed / cover;
