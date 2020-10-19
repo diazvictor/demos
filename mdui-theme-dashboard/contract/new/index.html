@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Bienvenid@s a mi pagina web</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/demos/mdui-theme-dashboard/assets/css/mdui.min.css">
+	<link rel="stylesheet" type="text/css" href="/demos/mdui-theme-dashboard/assets/css/base.css">
+</head>
+<body class="mdui-drawer-body-left mdui-appbar-with-toolbar mdui-theme-primary-blue-grey mdui-theme-accent-blue-grey mdui-color-grey-100">
+
+	<header class="mc-appbar mdui-appbar mdui-appbar-fixed">
+		<nav class="toolbar mdui-toolbar mdui-color-theme"> <!-- mdui-color-red-a700 -->
+			<a href="javascript:;" id="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+		    <div class="mdui-toolbar-spacer"></div>
+			<form method="get" id="search-bar" class="search-bar">
+				<button type="button" class="back mdui-btn mdui-btn-icon mdui-color-transparent">
+					<i class="mdui-icon material-icons mdui-text-color-theme-icon">arrow_back</i>
+				</button>
+				<button type="submit" class="submit mdui-btn mdui-btn-icon mdui-color-transparent">
+					<i class="mdui-icon material-icons mdui-text-color-theme-icon">search</i>
+				</button>
+				<input type="text" id="search" placeholder="Buscar">
+				<button type="button" class="cancel mdui-btn mdui-btn-icon mdui-color-transparent">
+					<i class="mdui-icon material-icons mdui-text-color-theme-icon">close</i>
+				</button>
+			</form>
+		    <div class="mdui-toolbar-spacer"></div>
+		    <a href="javascript:;" id="btn-search" class="mdui-btn mdui-btn-icon mdui-hidden-sm-up"><i class="mdui-icon material-icons">search</i></a>
+		    <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-hidden-sm-down" mdui-tooltip="{content: 'Fullscreen'}"><i class="mdui-icon material-icons">fullscreen</i></a>
+		    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Notifications'}"><i class="mdui-icon material-icons">notifications</i></a>
+		    <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-tooltip="{content: 'Profile'}" mdui-menu="{target: '#submenu_profile'}"><i class="mdui-icon material-icons">person_outline</i></a>
+			<ul class="mdui-menu" id="submenu_profile"><!-- mdui-menu-cascade -->
+				<li class="mdui-menu-item">
+					<a href="javascript:;" class="mdui-ripple">
+						<i class="mdui-menu-item-icon mdui-icon material-icons">settings</i>
+						Preferencias
+					</a>
+				</li>
+				<li class="mdui-divider"></li>
+				<li class="mdui-menu-item">
+					<a href="javascript:;" class="mdui-ripple">
+						<i class="mdui-menu-item-icon mdui-icon material-icons">exit_to_app</i>Cerrar Sesion
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="mdui-drawer" id="drawer">
+		<ul class="mdui-list" mdui-collapse="{accordion: false}">
+
+			<a href="/demos/mdui-theme-dashboard/dashboard/" class="mdui-list-item mdui-ripple">
+				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">dashboard</i>
+				<div class="mdui-list-item-content">Dashboard</div>
+			</a>
+
+			<li class="mdui-list-item mdui-ripple">
+				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">equalizer</i>
+				<div class="mdui-list-item-content">Reportes</div>
+			</li>
+
+			<a href="/demos/mdui-theme-dashboard/clients/" class="mdui-list-item mdui-ripple">
+				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">people</i>
+				<div class="mdui-list-item-content">Clientes</div>
+			</a>
+
+			<li class="mdui-collapse-item">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">directions_car</i>
+					<div class="mdui-list-item-content">Vehiculos</div>
+					<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-theme-icon">keyboard_arrow_down</i>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<a href="/demos/mdui-theme-dashboard/vehicles/" class="mdui-list-item mdui-ripple">Registros</a>
+					<li class="mdui-list-item mdui-ripple">Clases</li>
+					<li class="mdui-list-item mdui-ripple">Usos</li>
+					<li class="mdui-list-item mdui-ripple">Tipos</li>
+					<li class="mdui-list-item mdui-ripple">Marcas</li>
+					<li class="mdui-list-item mdui-ripple">Modelos</li>
+				</ul>
+			</li>
+
+			<a href="/demos/mdui-theme-dashboard/contract/" class="mdui-list-item mdui-list-item-active mdui-ripple">
+				<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">insert_drive_file</i>
+				<div class="mdui-list-item-content">Contratos</div>
+			</a>
+
+			<li class="mdui-collapse-item">
+				<div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+					<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-icon">settings</i>
+					<div class="mdui-list-item-content">Configuración</div>
+					<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-theme-icon">keyboard_arrow_down</i>
+				</div>
+				<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+					<li class="mdui-list-item mdui-ripple">General</li>
+					<li class="mdui-list-item mdui-ripple">Usuarios</li>
+					<li class="mdui-list-item mdui-ripple">Sedes</li>
+					<li class="mdui-list-item mdui-ripple">Conceptos</li>
+					<li class="mdui-list-item mdui-ripple">Sub-Conceptos</li>
+					<li class="mdui-list-item mdui-ripple">Garantia</li>
+					<li class="mdui-list-item mdui-ripple">Categorias</li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="mdui-container mdui-m-y-2">
+		<div class="mdui-row">
+
+			<div class="mdui-mobile mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-8 mdui-m-b-2">
+				<div class="mdui-card mdui-shadow-0 mdui-b-1 mdui-br-2 mdui-p-y-2 mdui-p-x-2">
+					<div class="mdui-card-content">
+						<div class="mdui-row">
+							<div class="mdui-col">
+								<span class="mdui-typo-title">Registro de un nuevo contrato</span>
+								<p class="mdui-text-color-black-secondary mdui-m-t-0 mdui-f-1">Desde aquí usted podrá registrar un nuevo contrato.</p>
+								<div class="mdui-divider mdui-m-y-1"></div>
+							</div>
+						</div>
+						<div class="mdui-m-y-1"></div>
+						<div class="mdui-row">
+							<div class="mdui-col mdui-p-b-1">
+								<label class="mdui-textfield-label">Cliente asociado</label>
+								<select class="mdui-select" mdui-select>
+									<option value=" ">Seleccione cliente asociado</option>
+								</select>
+							</div>
+						</div>
+						<div class="mdui-row">
+							<div class="mdui-col mdui-p-b-1">
+								<label class="mdui-textfield-label">Vehiculo asociado</label>
+								<select class="mdui-select" mdui-select>
+									<option value=" ">Seleccione vehicuo asociado</option>
+								</select>
+							</div>
+						</div>
+						<div class="mdui-row">
+							<div class="mdui-col mdui-p-b-1">
+								<label class="mdui-textfield-label">Previsión Automotris</label>
+								<select class="mdui-select" mdui-select>
+									<option value="1">-- Sin FPA --</option>
+								</select>
+							</div>
+						</div>
+						<div class="mdui-row">
+							<div class="mdui-textfield mdui-textfield-floating-label mdui-p-t-0 mdui-col">
+								<label class="mdui-textfield-label">Observación</label>
+								<textarea class="mdui-textfield-input" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="mdui-m-b-2"></div>
+						<div class="mdui-row">
+							<div class="mdui-col">
+								<button type="button" class="mdui-btn mdui-float-left mdui-color-grey-300 mdui-text-color-grey-500 mdui-ripple">guardar</button>
+								<a href="/mdui-theme-dashboard/contract/" class="mdui-btn mdui-float-right mdui-color-grey-500 mdui-text-color-white mdui-ripple">cancelar</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-4">
+				<div class="mdui-m-b-1"></div>
+				<div class="base-card mdui-shadow-0 mdui-b-1 mdui-br-2">
+					<div class="base-card-content mdui-p-x-2 mdui-p-y-1">
+						<div class="base-card-header">
+							<div class="base-card-icon">
+								<div class="mdui-shadow-5 mdui-color-orange-500 mdui-text-color-white mdui-p-a-3 mdui-br-1"><i class="mdui-icon material-icons">file_download</i></div>
+							</div>
+							<div class="base-card-header-content">
+								<div class="base-text">Importar clientes</div>
+								<div class="mdui-m-b-1"></div>
+								<div class="base-subtitle">Importa facílmente tus clientes usando un archivo <b>CSV.</b></div>
+							</div>
+						</div>
+						<div class="mdui-divider mdui-m-y-1"></div>
+						<div class="base-card-footer mdui-typo">
+							<div class="mdui-text-color-black-secondary"><a href="javascript:;">Importar</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="mdui-m-b-2"></div>
+				<div class="base-card mdui-shadow-0 mdui-b-1 mdui-br-2">
+					<div class="base-card-content mdui-p-x-2 mdui-p-y-1">
+						<div class="base-card-header">
+							<div class="base-card-icon">
+								<div class="mdui-shadow-5 mdui-color-green-500 mdui-text-color-white mdui-p-a-3 mdui-br-1"><i class="mdui-icon material-icons">file_upload</i></div>
+							</div>
+							<div class="base-card-header-content">
+								<div class="base-text">Exportar clientes</div>
+								<div class="mdui-m-b-1"></div>
+								<div class="base-subtitle">Exporta facílmente tus clientes a un archivo <b>CSV.</b></div>
+							</div>
+						</div>
+						<div class="mdui-divider mdui-m-y-1"></div>
+						<div class="base-card-footer mdui-typo">
+							<div class="mdui-text-color-black-secondary"><a href="javascript:;">Exportar</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mdui-footer mdui-container-fluid mdui-typo">
+		<div class="mdui-clearfix mdui-p-y-3 mdui-p-x-3">
+			<div class="mdui-float-left">
+				<ul class="mdui-nav-foot">
+					<li>
+						<a href="/mdui-theme-dashboard/about/">ABOUT US</a>
+					</li>
+					<li>
+						<a href="https://diazvictor.gitlab.io/" target="_blank">BLOG</a>
+					</li>
+				</ul>
+			</div>
+			<div class="mdui-float-right">
+				<p>© 2020, made with ♥ by <a href="https://github.com/diazvictor/" target="_blank">diazvictor</a> for a better web.</p>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="/demos/mdui-theme-dashboard/assets/js/mdui.min.js"></script>
+	<script type="text/javascript" src="/demos/mdui-theme-dashboard/assets/js/nav.js"></script>
+	<script type="text/javascript">
+		var tab = new mdui.Tab('#tab');
+
+		// method
+		document.getElementById('next').addEventListener('click', function () {
+			tab.next();
+		});
+		document.getElementById('prev').addEventListener('click', function () {
+			tab.prev();
+		});
+	</script>
+</body>
+</html>

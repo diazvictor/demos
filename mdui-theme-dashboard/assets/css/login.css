@@ -1,0 +1,8 @@
+body {
+	padding: 8% 0px;
+}
+.mdui-row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
