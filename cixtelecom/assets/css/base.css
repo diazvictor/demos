@@ -6,11 +6,12 @@
  * @date      08.10.2020 20:35:55 -04
  */
 
-/*
-body {
-	font-family: raleway !important;
+.fullheight {
+	display: flex;
+	align-items: center;
+	height:100vh;
+	min-height:100vh;
 }
-*/
 .menu-icon {
 	margin-top: 32%;
 }
