@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Quick's Pokedex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Díaz Urbaneja Víctor Eduardo Diex">
+        <meta name="description" content="A reimplementation of @jamesqquick's podedex with Axios.">
+        <link rel="stylesheet" href="/demos/assets/css/pokedex/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap"rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+				<h1>Quick's Pokedex</h1>
+	            <div class="searchbar">
+					<input type="text" id="searchInput" class="textfield" placeholder="Search...">
+					<button type="button" id="btnSearch">Search</button>
+	            </div>
+	            <div class="actionbar" id="filters"></div>
+            </div>
+            <ul id="pokedex"></ul>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+		<script type="text/javascript" src="/demos/assets/js/pokedex/app.js"></script>
+    </body>
+</html>
