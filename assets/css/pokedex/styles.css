@@ -1,0 +1,121 @@
+/**!
+ * @package   Pokedex
+ * @filename  styles.css
+ * @version   1.0
+ * @author    Díaz Urbaneja Víctor Eduardo Diex <victor.vector008@gmail.com>
+ * @date      23.03.2021 04:09:49 -04
+ */
+
+body {
+    background-color: orangered;
+    color: white;
+    margin: 0;
+    font-family: rubik;
+}
+
+.container {
+    padding: 40px;
+    margin: 0 auto;
+}
+
+.header {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.actionbar {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+	grid-gap: 20px;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+    margin-bottom: 0px;
+}
+
+.searchbar {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-gap: 20px;
+}
+
+input.textfield {
+	background: #f4f4f4;
+	padding: 10px;
+	border: 1px solid #FF4500;
+	border-radius: 3px;
+	outline: none;
+}
+
+input.textfield + button {
+	border-radius: 3px;
+}
+
+button {
+	color: #757575;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-color: #f4f4f4;
+	border: none;
+	padding: 10px 20px;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+    padding-inline-start: 0;
+    margin-top: 20px;
+}
+
+.card {
+    list-style: none;
+    padding: 40px;
+    background-color: #f4f4f4;
+    color: #222;
+	text-align: center;
+}
+
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+.card-title {
+    text-transform: capitalize;
+    margin-bottom: 0px;
+    font-size: 32px;
+    font-weight: normal;
+}
+.card-subtitle {
+    margin-top: 5px;
+    color: #666;
+    font-weight: lighter;
+}
+
+.card-image {
+    height: 180px;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
